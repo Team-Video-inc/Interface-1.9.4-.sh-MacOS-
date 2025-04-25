@@ -1,0 +1,58 @@
+#!/bin/bash
+
+clear
+echo -e "\033[1;32mInitializing The Interface...\033[0m"
+sleep 2
+echo -e "\033[1;32mConnecting to NOVA mainframe...\033[0m"
+sleep 2
+echo -e "\033[1;32mLoading core modules...\033[0m"
+sleep 1
+echo -e "\033[1;32mBooting up N.O.V.A...\033[0m"
+sleep 3
+clear
+
+echo -e "\033[1;35m=========================================================="
+echo "   NOTE: CHECK DAILY UPDATES ON OUR APP BELOW"
+echo "   https://sites.google.com/view/team-video/whats-new?"
+echo -e "==========================================================\033[0m"
+echo
+echo "YOUR VERSION: 1.9.4"
+echo "Press ENTER to start the terminal..."
+read
+
+clear
+echo -e "\033[1;36m=================================================="
+echo "      [ TEAM VIDEO INTERFACE - 1.9.4 BETA IMPROVED ]"
+echo "     NOVA ENTERPRISES | Team Video Technologies"
+echo -e "==================================================\033[0m"
+echo
+
+while true; do
+  echo
+  read -p "> Team Video Technologies | Please Enter an Order or Ask a Question: " command
+
+  case "$command" in
+    "Order 50")
+      echo "Opening WhatsApp Web..."
+      open "https://web.whatsapp.com/"
+      ;;
+    "Order 32")
+      echo "Launching EaglerCraft..."
+      open "https://eaglercraft.me/"
+      ;;
+    "Order 99")
+      echo "Opening Roblox..."
+      open "https://www.roblox.com/home"
+      ;;
+    "Open Company App")
+      echo "Opening Team Video App..."
+      open "https://sites.google.com/view/team-video/whats-new?authuser=0"
+      ;;
+    "What is your name?")
+      echo "I am N.O.V.A = Neural Operational Virtual Assistant..."
+      ;;
+    *)
+      echo -e "\033[1;31m[ERROR 145]: Unrecognized Order or Question. Please try again.\033[0m"
+      ;;
+  esac
+done
